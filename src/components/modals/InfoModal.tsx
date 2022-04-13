@@ -57,9 +57,24 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         Dr Buechstabe «W» chunt im gsuechte Wort nid vor.
       </p>
 
+      <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+        Faus es Wort nid agno wird, schrieb mer doch es Mail a{' '}
+        <a className="underline" href="mailto:danbueschlen@gmail.com">
+          danbueschlen@gmail.com
+        </a>{' '}
+        oder mach grad uf{' '}
+        <a
+          className="underline"
+          href="https://github.com/daenub/react-wordle/pulls"
+        >
+          GitHub e Pull Request
+        </a>{' '}
+        uf.
+      </p>
+
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         Das isch e Open Source Version vom Spiu «Wordle» vom Josh Wardle wo mir
-        alli känne u liebe –{' '}
+        aui kennä u liebe –{' '}
         <a
           href="https://github.com/daenub/react-wordle"
           className="underline font-bold"

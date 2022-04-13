@@ -1,7 +1,7 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
-export const WIN_MESSAGES = ['Henne guet!', 'Wäutsguet', 'Nid schlecht!']
-export const GAME_COPIED_MESSAGE = 'Spiuu kopiert'
+export const WIN_MESSAGES = ['Henne guet!', 'Wäutsguet!', 'Nid schlecht!']
+export const GAME_COPIED_MESSAGE = 'Spiu kopiert'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Nid gnueg Buechstabe'
 export const WORD_NOT_FOUND_MESSAGE = 'Wort nid gfunge'
 export const HARD_MODE_ALERT_MESSAGE =
