@@ -18,43 +18,43 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="N"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="I" />
+        <Cell value="D" />
+        <Cell value="S" />
+        <Cell value="I" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Dr Buechstabe «W» isch im gsuechte Wort am richtige Ort.
+        Dr Buechstabe «N» isch im gsuechte Wort am richtige Ort.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="C" />
+        <Cell value="H" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="U"
           status="present"
         />
-        <Cell value="O" />
         <Cell value="T" />
-      </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        Dr Buechstabe «L» chunt im gsuechte Wort vor, isch aber am fausche Ort.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
         <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Dr Buechstabe «W» chunt im gsuechte Wort nid vor.
+        Dr Buechstabe «U» chunt im gsuechte Wort vor, isch aber am fausche Ort.
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="R" />
+        <Cell value="Ü" />
+        <Cell value="Ü" />
+        <Cell isRevealing={true} isCompleted={true} value="M" status="absent" />
+        <Cell value="E" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Dr Buechstabe «M» chunt im gsuechte Wort nid vor.
       </p>
 
       <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
