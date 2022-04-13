@@ -39,8 +39,12 @@ export const Keyboard = ({
         onDelete()
       } else {
         const key = localeAwareUpperCase(e.key)
+        console.log({ key })
         // TODO: check this test if the range works with non-english letters
-        if (key.length === 1 && key >= 'A' && key <= 'Z') {
+        if (
+          key.length === 1 &&
+          ((key >= 'A' && key <= 'Z') || 'ÄÖÜ'.indexOf(key) > -1)
+        ) {
           onChar(key)
         }
       }
@@ -54,7 +58,7 @@ export const Keyboard = ({
   return (
     <div>
       <div className="flex justify-center mb-1">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
+        {['Q', 'W', 'E', 'R', 'T', 'Z', 'U', 'I', 'O', 'P', 'Ü'].map((key) => (
           <Key
             value={key}
             key={key}
@@ -65,7 +69,7 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center mb-1">
-        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
+        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ö', 'Ä'].map((key) => (
           <Key
             value={key}
             key={key}
@@ -79,7 +83,7 @@ export const Keyboard = ({
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+        {['Y', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
           <Key
             value={key}
             key={key}

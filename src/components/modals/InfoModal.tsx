@@ -8,10 +8,10 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Spiualeitig" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Fing s wort in 6 Versüech use. Nach jedem Versuech zeigt dir d Farb vom
+        Chästli, wie näch du am gsuechte Wort gsi bisch.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -27,7 +27,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        Dr Buechstabe «W» isch im gsuechte Wort am richtige Ort.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -43,7 +43,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="T" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        Dr Buechstabe «L» chunt im gsuechte Wort vor, isch aber am fausche Ort.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -54,17 +54,17 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        Dr Buechstabe «W» chunt im gsuechte Wort nid vor.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        Das isch e Open Source Version vom Spiu «Wordle» vom Josh Wardle wo mir
+        alli känne u liebe –{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/daenub/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
+          Dr Code fingsch hie
         </a>{' '}
       </p>
     </BaseModal>
